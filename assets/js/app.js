@@ -34,60 +34,53 @@ window.addEventListener("scroll",()=>{
 
 });
 
+
+
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", async function (e) {
-        
+    contactForm.addEventListener("submit", function (e) {
 
         e.preventDefault();
 
-        const data = {
+        const btn = contactForm.querySelector("button");
+
+        btn.disabled = true;
+        btn.innerText = "Sending...";
+
+        emailjs.send("service_lei5mqa", "template_2baeysn", {
+
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
             subject: document.getElementById("subject").value,
             message: document.getElementById("message").value
-        };
 
-        try {
+        })
 
-            const response = await fetch("http://localhost:5000/send-email", {
+        .then(() => {
 
-                method: "POST",
+            alert("✅ Your message has been sent successfully!");
 
-                headers: {
-                    "Content-Type": "application/json"
-                },
+            contactForm.reset();
 
-                body: JSON.stringify(data)
+        })
 
-            });
-
-            const result = await response.json();
-
-            if (result.success) {
-
-                alert("Message sent successfully!");
-
-                contactForm.reset();
-
-            } else {
-
-                alert("Failed to send message.");
-
-            }
-
-        } catch (error) {
+        .catch((error) => {
 
             console.error(error);
 
-            alert("Cannot connect to the server.");
+            alert("❌ Failed to send message.");
 
-        }
+        })
 
-    }
-    
-);
+        .finally(() => {
+
+            btn.disabled = false;
+            btn.innerText = "Send Message";
+
+        });
+
+    });
 
 }
