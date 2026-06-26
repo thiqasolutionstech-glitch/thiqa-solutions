@@ -36,8 +36,6 @@ window.addEventListener("scroll",()=>{
 
 const contactForm = document.getElementById("contactForm");
 
-alert(contactForm ? "Form Found" : "Form NOT Found");
-
 if (contactForm) {
 
     contactForm.addEventListener("submit", async function (e) {
