@@ -2,248 +2,153 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Thiqa Solutions</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+          content="Thiqa Solutions - Software Development, Embedded Systems, Data Analytics and Digital Solutions.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+          href="assets/css/responsive.css">
+
 </head>
 
 <body>
 
-    <nav>
+    <header class="header">
 
-        
     <div class="container">
 
-        <div class="logo">
-            <a href="#home">
-                 <img src="images/logo.png" alt="Thiqa Solutions">
-             </a>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-        
-        <a href="#quote" class="btn">Get a Quote</a>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+
+                <img src="assets/images/logo.png" alt="Thiqa Solutions Logo">
+
+                <span>Thiqa Solutions</span>
+
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#portfolio">Portfolio</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <a href="#quote" class="btn-primary">
+
+                Get a Quote
+
+            </a>
+
+        </nav>
 
     </div>
 
-    
-</nav>
+</header>
 
 
 
 
 
 
-<section class="hero">
+<!-- ==========================================
+                 HERO SECTION
+=========================================== -->
 
-    <div class="container hero-content">
+<section class="hero" id="home">
 
-        <div class="hero-text">
+    <div class="container hero-container">
+
+        <div class="hero-content">
 
             <span class="hero-badge">
-                Building Trust Through Technology
+                 Welcome to Thiqa Solutions
             </span>
 
             <h1>
-                We help businesses grow through modern websites,
-                mobile applications, and custom software solutions.
+
+                Engineering
+                <span>Digital Solutions</span>
+                with Confidence.
+
             </h1>
 
             <p>
-                Thiqa Solutions helps businesses grow through
+
+               Thiqa Solutions helps businesses grow through
                 modern websites, mobile applications, and custom
                 software solutions designed for performance and scalability.
             </p>
 
             <div class="hero-buttons">
-                <a href="#" class="hero-btn-primary">
-                    Get Started
-                </a>
-
-                <a href="#" class="hero-btn-secondary">
-                    View Portfolio
-                </a>
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="images/hero-dashboard.png" alt="Dashboard">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<section class="services">
-
-    <div class="container">
-
-        <h2>Our Services</h2>
-
-        <div class="services-grid">
-
-            <div class="service-card">
-                <h3>Web Development</h3>
-                <p>Modern and responsive websites for businesses and startups.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Mobile Applications</h3>
-                <p>Android and iOS applications with excellent user experience.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Custom Software</h3>
-                <p>Tailored software solutions designed for your business needs.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="why-us">
-
-    <div class="container">
-
-        <h2>Why Choose Us</h2>
-
-        <div class="why-grid">
-
-            <div class="why-card">
-                <h3>🚀 Fast Delivery</h3>
-                <p>We deliver projects efficiently without compromising quality.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>💻 Modern Technologies</h3>
-                <p>We use the latest tools and frameworks to build scalable products.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>🛡 Reliable Solutions</h3>
-                <p>Secure, stable and performance-focused software solutions.</p>
-            </div>
-
-            <div class="why-card">
-                <h3>🤝 Dedicated Support</h3>
-                <p>Continuous support and maintenance for your business growth.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="portfolio">
-
-    <div class="container">
-
-        <h2>Our Portfolio</h2>
-
-        <p class="portfolio-subtitle">
-            Some examples of projects and solutions we can build for our clients.
-        </p>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card">
-                <img src="images/portfolio-web.jpg" alt="">
-                <h3>Business Website</h3>
-                <p>Modern responsive corporate website.</p>
-            </div>
-
-            <div class="portfolio-card">
-                <img src="images/portfolio-mobile.jpg" alt="">
-                <h3>Mobile Application</h3>
-                <p>Android & iOS mobile app solution.</p>
-            </div>
-
-            <div class="portfolio-card">
-                <img src="images/portfolio-system.jpg" alt="">
-                <h3>Management System</h3>
-                <p>Custom dashboard and business management software.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-<section class="about" id="about">
-    <div class="container">
-        <div class="about-content">
-
-            <div class="about-text">
-                <h2>About Thiqa Solutions</h2>
-
-                <p>
-                    Thiqa Solutions is a software development company
-                    specializing in modern websites, mobile applications,
-                    and custom business solutions.
-                </p>
-
-                <p>
-                    Our mission is to help startups and businesses
-                    transform their ideas into powerful digital products.
-                </p>
 
                 <a href="#contact" class="btn-primary">
-                    Contact Us
-                </a>
-            </div>
 
-            <div class="about-image">
-                <img src="images/about.jpg" alt="About Us">
+                    Start Your Project
+
+                </a>
+
+                <a href="#services" class="btn-secondary">
+
+                    Explore Services
+
+                </a>
+
             </div>
 
         </div>
+
+        <div class="hero-right">
+
+    <div class="dashboard-card">
+
+        <img
+            src="assets/images/dashboard.png"
+            alt="Thiqa Dashboard"
+        >
+
     </div>
+
+</div>
+    </div>
+
+</div>
+
+
+
+
+    </div>
+
 </section>
 
 
@@ -252,48 +157,128 @@
 
 
 
-<section id="quote" class="quote-section">
-    <div class="container">
+<!-- ================= SERVICES ================= -->
 
-        <h2>Request a Quote</h2>
-        <p>Tell us about your project and we'll get back to you soon.</p>
+<section class="services" id="services">
 
-     <form id="quoteForm" class="quote-form">
+    <div class="section-header">
 
-    <input
-        type="text"
-        id="name"
-        placeholder="Your Name"
-        required
-    >
+        <span>OUR SERVICES</span>
 
-    <input
-        type="email"
-        id="email"
-        placeholder="Your Email"
-        required
-    >
+        <h2>Solutions Built For Your Business</h2>
 
-    <input
-        type="text"
-        id="service"
-        placeholder="Service Needed"
-        required
-    >
-
-    <textarea
-        id="message"
-        placeholder="Describe your project..."
-        required
-    ></textarea>
-
-    <button type="submit" class="btn">
-        Send Request
-    </button>
-
-</form>
+        <p>
+            We help startups and companies transform ideas into
+            scalable digital products using modern technologies.
+        </p>
 
     </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+
+           <div class="service-icon">
+
+              <img src="assets/images/icons/web.png"
+                alt="Web Development">
+
+                </div>
+
+            <h3>Web Development</h3>
+
+            <p>
+                Modern responsive websites and powerful web
+                applications.
+            </p>
+
+        </div>
+        <div class="service-card">
+
+            <div class="service-icon">
+
+    <img src="assets/images/icons/mobile.png"
+         alt="Mobile Development">
+
+</div>
+
+            <h3>Mobile Apps</h3>
+
+            <p>
+                Android & iOS applications with excellent user experience.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+           <div class="service-icon">
+
+    <img src="assets/images/icons/ai.png"
+         alt="AI Solutions">
+
+</div>
+            <h3>AI Solutions</h3>
+
+            <p>
+                Intelligent systems powered by Artificial Intelligence.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+    <img src="assets/images/icons/data.png"
+         alt="Data Analytics">
+
+</div>
+            <h3>Data Analytics</h3>
+
+            <p>
+                Transform your business data into actionable insights.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+    <img src="assets/images/icons/embedded.png"
+         alt="Embedded Systems">
+
+</div>
+
+            <h3>Embedded Systems</h3>
+
+            <p>
+                Embedded hardware and IoT solutions for modern devices.
+            </p>
+
+        </div>
+
+        
+        <div class="service-card">
+
+            <div class="service-icon">
+
+    <img src="assets/images/icons/cloud.png"
+         alt="Cloud Solutions">
+
+</div>
+
+            <h3>Cloud Solutions</h3>
+
+            <p>
+                Cloud deployment and scalable infrastructure.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
 
@@ -302,112 +287,552 @@
 
 
 
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us" id="about">
+
+    <div class="why-left">
+
+        <span>WHY CHOOSE US</span>
+
+        <h2>
+            Building Digital Success
+            With Innovation
+        </h2>
+
+        <p>
+
+            At Thiqa Solutions we combine creativity,
+            technology, and business strategy to deliver
+            modern digital solutions that help companies grow.
+
+        </p>
+
+        <a href="#contact" class="btn-primary">
+            Contact Us
+        </a>
+
+    </div>
+
+    <div class="why-right">
+
+        <div class="feature-card">
+
+            <h3>🚀 Fast Delivery</h3>
+
+            <p>
+                Agile development process for faster product launches.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>🔒 Secure Solutions</h3>
+
+            <p>
+                Security is integrated into every stage of development.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>💡 Creative Ideas</h3>
+
+            <p>
+                Innovative thinking to solve real business challenges.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h3>🤝 Long-Term Support</h3>
+
+            <p>
+                Continuous maintenance and support after deployment.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="process" id="process">
+
+    <div class="section-header">
+
+        <span>OUR PROCESS</span>
+
+        <h2>How We Work</h2>
+
+        <p>
+            Every successful project follows a clear and efficient workflow.
+        </p>
+
+    </div>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <div class="step-number">01</div>
+
+            <h3>Discovery</h3>
+
+            <p>
+                We understand your goals and business requirements.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="step-number">02</div>
+
+            <h3>Planning</h3>
+
+            <p>
+                We design the solution and define the roadmap.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="step-number">03</div>
+
+            <h3>Development</h3>
+
+            <p>
+                Our team builds and tests your product using modern technologies.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <div class="step-number">04</div>
+
+            <h3>Launch</h3>
+
+            <p>
+                Deployment, monitoring and continuous support.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section class="portfolio" id="portfolio">
+
+    <div class="section-header">
+
+        <span>OUR PORTFOLIO</span>
+
+        <h2> Projects</h2>
+
+        <p>
+            Explore some of the solutions we build for startups and businesses.
+        </p>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+        <div class="project-card">
+
+            <img src="assets/images/project1.jpg" alt="Project 1">
+
+            <div class="project-content">
+
+                <span>Web Development</span>
+
+                <h3>E-Commerce Platform</h3>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="assets/images/project2.jpg" alt="Project 2">
+
+            <div class="project-content">
+
+                <span>Mobile Application </span>
+
+                <h3>An innovative fitness exercise app</h3>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="assets/images/project3.jpg" alt="Project 3">
+
+            <div class="project-content">
+
+                <span>Data Analytics</span>
+
+                <h3>Business Dashboard</h3>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+    
+<!--================ CONTACT =================-->
 
 <section class="contact" id="contact">
-    <div class="container">
 
-        <h2>Contact Us</h2>
-        <p>Let's discuss your next project and bring your ideas to life.</p>
+    <div class="section-header">
 
+        <span>CONTACT US</span>
+
+        <h2>Let's Build Something Amazing Together</h2>
+
+        <p>
+            Have an idea or project? We'd love to hear from you.
+            Send us a message and we'll get back to you as soon as possible.
+        </p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
         <div class="contact-info">
 
-            <div class="contact-card">
-                <h3>📧 Email</h3>
-                <a href="mailto:thiqasolutions.tech@gmail.com">
-                    thiqasolutions.tech@gmail.com
-                </a>
+            <h3>Get In Touch</h3>
+
+            <p>
+                We're always ready to discuss your ideas and help turn them
+                into successful digital products.
+            </p>
+
+            <div class="info-item">
+
+                <img src="assets/images/icons/email.png" alt="Email">
+
+                <div>
+                    <h4>Email</h4>
+                    <a href="mailto:thiqasolutions.tech@gmail.com" class="contact-link">
+                         thiqasolutions.tech@gmail.com
+                    </a>
+                </div>
+
             </div>
 
-            <div class="contact-card">
-                <h3>💬 WhatsApp</h3>
-                <a href="https://wa.me/201288850214" target="_blank">
-                    +20 128 885 0214
-                </a>
-            </div>
+            <div class="info-item">
 
-            <div class="contact-card">
-                <h3>💼 LinkedIn</h3>
-                <a href="https://www.linkedin.com/company/thiqa-solutions/about/?viewAsMember=true" target="_blank">
-                    Thiqa Solutions
-                </a>
+                <img src="assets/images/icons/phone.png" alt="Phone">
+
+                <div>
+                    <h4>Phone / WhatsApp</h4>
+                    <a href="https://wa.me/201288850214" class="contact-link" target="_blank">
+                              +20 128 885 0214
+                        </a>
+                </div>
+
+            </div>
+            <div class="info-item">
+
+            <img src="assets/images/icons/linkedin.png" alt="LinkedIn">
+
+             <div>
+
+                <h4>LinkedIn</h4>
+
+                   <a href="https://www.linkedin.com/company/thiqa-solutions/"
+           target="_blank"
+                   class="contact-link">
+
+            Thiqa Solutions
+
+        </a>
+
+    </div>
+
+</div>
+
+            <div class="info-item">
+
+                <img src="assets/images/icons/location.png" alt="Location">
+
+                <div>
+                    <h4>Location</h4>
+                    <span> Cairo, Egypt </span>
+                </div>
+
             </div>
 
         </div>
 
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    id="name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    id="email" 
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    id="subject"
+                >
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    id="message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn-primary">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
     </div>
+
 </section>
 
 
 
 
+
+
+<!--================ FOOTER =================-->
 
 <footer class="footer">
 
-    <div class="footer-content">
+    <div class="footer-container">
 
-        <div>
-            <h3>Thiqa Solutions</h3>
+        <!-- Company -->
+
+        <div class="footer-column">
+
+            <img src="assets/images/logo.png"
+                 alt="Thiqa Solutions Logo"
+                 class="footer-logo">
+
             <p>
-                Building trust through technology.
-                We create modern websites, mobile apps,
-                and custom software solutions.
+
+                Thiqa Solutions is a technology company
+                specializing in software development,
+                quality assurance, embedded systems,
+                and data analytics.
+
             </p>
+
         </div>
 
-        <div>
-            <h4>Contact</h4>
-            <p>thiqasolutions.tech@gmail.com</p>
-            <p>+20 128 885 0214</p>
+        <!-- Quick Links -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#portfolio">Portfolio</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
         </div>
+
+        <!-- Services -->
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <ul>
+
+                <li>Web Development</li>
+
+                <li>Mobile Applications</li>
+
+                <li>Embedded Systems</li>
+
+                <li>Quality Assurance</li>
+
+                <li>Data Analytics</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-column">
+
+    <h3>Follow Us</h3>
+
+    <div class="footer-social">
+
+        <a href="mailto:thiqasolutions.tech@gmail.com" title="Email">
+            <img src="assets/images/icons/email.png" alt="Email">
+        </a>
+
+        <a href="https://wa.me/201288850214" target="_blank" title="WhatsApp">
+            <img src="assets/images/icons/phone.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://www.linkedin.com/company/thiqa-solutions/"
+           target="_blank"
+           title="LinkedIn">
+            <img src="assets/images/icons/linkedin.png" alt="LinkedIn">
+        </a>
 
     </div>
 
-    <hr>
+</div>
 
-    <p class="copyright">
-        © 2026 Thiqa Solutions. All Rights Reserved.
-    </p>
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+    © <span id="currentYear"></span>
+    Thiqa Solutions.
+    All Rights Reserved.
+
+</p>
+
+    </div>
 
 </footer>
 
-<script>
-document.getElementById("quoteForm").addEventListener("submit", async function(e) {
 
-    e.preventDefault();
 
-    const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        service: document.getElementById("service").value,
-        message: document.getElementById("message").value
-    };
 
-    try {
 
-        const response = await fetch("http://localhost:5000/send-email", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
 
-        const result = await response.json();
 
-        if(result.success){
-            alert("Request sent successfully!");
-            document.getElementById("quoteForm").reset();
-        } else {
-            alert("Failed to send request.");
-        }
+<button id="backToTop">
 
-    } catch(error) {
-        console.error(error);
-        alert("Server connection error.");
-    }
-});
-</script>
+    ↑
+
+</button>
+
+
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/script.js"></script>
+
 
 </body>
 
 </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,21 @@
+/* ===== Stats Responsive ===== */
+
+@media (max-width:992px){
+
+    .stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

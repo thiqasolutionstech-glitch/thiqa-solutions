@@ -19,14 +19,14 @@ const transporter = nodemailer.createTransport({
 
 app.post("/send-email", async (req, res) => {
 
-    const { name, email, service, message } = req.body;
+    const { name, email, subject, message } = req.body;
 
     try {
 
         await transporter.sendMail({
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER,
-            subject: `New Quote Request - ${service}`,
+            subject: `New Quote Request - ${subject}`,
             html: `
                 <h2>New Quote Request</h2>
 
@@ -34,7 +34,7 @@ app.post("/send-email", async (req, res) => {
 
                 <p><strong>Email:</strong> ${email}</p>
 
-                <p><strong>Service:</strong> ${service}</p>
+                <p><strong>Subject:</strong> ${subject}</p>
 
                 <p><strong>Message:</strong></p>
 
