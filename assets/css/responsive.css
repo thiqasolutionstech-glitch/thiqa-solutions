@@ -19,3 +19,68 @@
     }
 
 }
+
+
+/* ==========================
+   Navbar Responsive
+========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        height:auto;
+
+        padding:20px 0;
+
+        gap:20px;
+
+    }
+
+    .logo{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .logo img{
+
+        width:60px;
+
+    }
+
+    .logo span{
+
+        font-size:20px;
+
+    }
+
+    .nav-links{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+    .btn-primary{
+
+        width:90%;
+
+        text-align:center;
+
+    }
+
+}
