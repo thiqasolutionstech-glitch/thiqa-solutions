@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta name="google-site-verification" content="cLwNcfjDghJDO7rgiAnUJdikTGqqcncz2fHRIde5lA8" />
 
     <meta charset="UTF-8">
 
@@ -50,6 +49,13 @@
                 <span>Thiqa Solutions</span>
 
             </a>
+              <!-- Hamburger Button -->
+                 <button class="menu-toggle" id="menuToggle">
+
+                  ☰
+
+                 </button>
+
 
             <ul class="nav-links">
 
@@ -534,7 +540,55 @@
 
     </div>
 
-    <div class="contact-container">
+    
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    id="name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    id="email" 
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    id="subject"
+                >
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    id="message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn-primary">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="contact-container">
 
         <!-- Contact Information -->
         <div class="contact-info">
@@ -601,52 +655,6 @@
                 </div>
 
             </div>
-
-        </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form">
-
-            <form id="contactForm">
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    id="name"
-                    required
-                >
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    id="email" 
-                    required
-                >
-
-                <input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    id="subject"
-                >
-
-                <textarea
-                    name="message"
-                    rows="6"
-                    placeholder="Write your message..."
-                    id="message"
-                    required
-                ></textarea>
-
-                <button type="submit" class="btn-primary">
-
-                    Send Message
-
-                </button>
-
-            </form>
 
         </div>
 
