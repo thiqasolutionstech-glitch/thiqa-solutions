@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thiqasolutionstech-glitch.github.io/thiqa-solutions/sitemap.xml
